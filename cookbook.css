@@ -1,0 +1,94 @@
+body {
+	background-color: #000000;
+	background-image: url('/static/vinesbackground.jpg');
+	background-position: top center;
+	background-repeat: no-repeat;
+	width: 1024px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.navul{
+	list-style-type: none;
+	margin:100px;
+	padding:0;}
+
+.navli{
+	float: left;
+	}
+
+.nava{
+	position: relative;
+	top: 200px;
+	display:block;
+	width:402px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #ffffff;
+	font-weight:bold;
+	color:#000000;
+	background-color:#a4d233;
+	text-align:center;
+	padding:4px;
+	text-decoration:none;
+	text-transform:uppercase;
+	}
+
+
+
+.recipeslink{
+	text-align:left;
+	display:block;
+	color: green;
+	font-size: 15pt;
+	position: relative;
+	top: 220px;
+	left: 100px;
+}
+
+.recipeslink:link {color:#128325;} /*unvisited link*/
+.recipeslink:visited{color:#e5e717;}
+.recipeslink:hover{color:#b2c3b8;}
+.recipeslink:active{color:#078be8;}
+
+.logo{
+	text-align: center;
+	position: relative;
+	top: -10px;
+	}
+
+.recipecontent {
+	background-image: url('/static/recipecontent3.jpg');
+	position: relative;
+	top: 120px;
+	color: #000000;
+	display: block;
+	padding: 10px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #ffffff;
+	background-color: #48c936;
+	margin: 100px;
+	overflow: hidden;
+}
+
+.img {float: right;}
+
+.recipelist {
+	position: relative;
+	top: 120px;
+	color: #000000;
+	display: block;
+	padding: 50px;
+	padding-top: 20px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #ffffff;
+	background-color: #48c936;
+	margin: 100px;
+	overflow: hidden;
+}
+
+.recipelist > li {
+	font-size: 20px;
+}
