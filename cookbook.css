@@ -1,94 +1,120 @@
 body {
 	background-color: #000000;
-	background-image: url('/static/vinesbackground.jpg');
+	background-image: url('/static/logo.png');
 	background-position: top center;
 	background-repeat: no-repeat;
-	width: 1024px;
+	width: 824px;
 	margin-right: auto;
 	margin-left: auto;
 }
 
-.navul{
+.nav {
+	display: block;
+	margin-top: 270px;
+	margin-bottom: 28px;
+	overflow: auto;
+}
+
+.navul {
 	list-style-type: none;
-	margin:100px;
-	padding:0;}
+	padding: 0;
+}
 
 .navli{
 	float: left;
-	}
-
-.nava{
-	position: relative;
-	top: 200px;
-	display:block;
-	width:402px;
-	border-style: solid;
-	border-width: 1px;
-	border-color: #ffffff;
-	font-weight:bold;
-	color:#000000;
-	background-color:#a4d233;
-	text-align:center;
-	padding:4px;
-	text-decoration:none;
-	text-transform:uppercase;
-	}
-
-
-
-.recipeslink{
-	text-align:left;
-	display:block;
-	color: green;
-	font-size: 15pt;
-	position: relative;
-	top: 220px;
-	left: 100px;
 }
 
-.recipeslink:link {color:#128325;} /*unvisited link*/
-.recipeslink:visited{color:#e5e717;}
-.recipeslink:hover{color:#b2c3b8;}
-.recipeslink:active{color:#078be8;}
-
-.logo{
+.nava {
+	display: block;
+	width: 150px;
+	border-style: solid;
+	border-width: 8px;
+	border-color: #9de642;
+	-moz-border-bottom-colors: #2a8500 #56b10e #8bcf15 #baed2f #c3f747 #b9d7a0 #ccf1c3;
+	-moz-border-top-colors:   #2a8500 #56b10e #8bcf15 #baed2f #c3f747 #b9d7a0 #ccf1c3;
+	-moz-border-left-colors: #2a8500 #56b10e #8bcf15 #baed2f #c3f747 #b9d7a0 #ccf1c3;
+	-moz-border-right-colors: #2a8500 #56b10e #8bcf15 #baed2f #c3f747 #b9d7a0 #ccf1c3;
+	font-weight: bold;
+	color: #000000;
+	text-shadow: 1px 1px 0.3em #2a8500;
+	background-color: #aae660;
 	text-align: center;
+	padding: 0.25em;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin-right: 16px;
+	margin-left: 15px;
+}
+
+/*contain links to recipe-list, previous, next*/
+.recipesnav {
+	clear: both;
+	display: block;
+	border-style: solid;
+	border-width: 1px;
+	border-color: white;
+	border-bottom-color: #2a8500;
+	background: linear-gradient(top, #2a8500, #9de642);
+	background: -moz-linear-gradient(top, #2a8500, #9de642);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#2a8500), to(#9de642));
+	font-weight: bold;
+	color: #000000;
+	background-color: #aae660;
+	height: 40px;
+}
+
+.recipesnav > a {
+	font-size: 1.25em;
+	text-transform: uppercase;
+	padding-left: 0.75em;
 	position: relative;
-	top: -10px;
-	}
+	top: 0.60em;
+}
+
+.recipesnav > a:visited {
+	color: #083047;
+}
+
+.recipesnav > a:hover {
+	color: #FFFFFF;
+}
 
 .recipecontent {
-	background-image: url('/static/recipecontent3.jpg');
-	position: relative;
-	top: 120px;
-	color: #000000;
+	background-image: url('/static/contentbackground.png');
+	color: #083047;
 	display: block;
-	padding: 10px;
 	border-style: solid;
 	border-width: 1px;
 	border-color: #ffffff;
-	background-color: #48c936;
-	margin: 100px;
+	background-color: #d9f6b4;
+	margin-bottom: 2.5em;
 	overflow: hidden;
+	padding-bottom: 2em;
+	padding-top: 1em;
 }
 
-.img {float: right;}
-
-.recipelist {
-	position: relative;
-	top: 120px;
-	color: #000000;
-	display: block;
-	padding: 50px;
-	padding-top: 20px;
-	border-style: solid;
-	border-width: 1px;
-	border-color: #ffffff;
-	background-color: #48c936;
-	margin: 100px;
-	overflow: hidden;
+.img {
+	float: right;
+	padding-right: 2em;
+	padding-top: 2.5em;
+	padding-bottom: 2em;
+	padding-left: 0.5em;
 }
 
-.recipelist > li {
-	font-size: 20px;
+/*header "Recipes" of recipe-list*/
+.recipecontent h1 {
+	margin-left: 0.75em;
+	font-size: 2.5em;
+	color: #083047;
+	text-shadow: 5px 4px 0.3em #0b0841;
+	text-transform: uppercase;
+}
+
+.recipecontent > h2 {
+	margin-left: 1.25em;
+}
+
+.recipecontent > ul,ol {
+	margin: 0.5em 1.25em 0.5em 2em;
+	font-size: 1.25em;
 }
